@@ -1,0 +1,100 @@
+.page_container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  background-size: 600% 600%;
+  animation: neonBackground 20s ease infinite;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@keyframes neonBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.profile_container {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 12px;
+  box-shadow: 0 0 20px #00ffff88, 0 0 40px #ff00ff33;
+  backdrop-filter: blur(10px);
+}
+
+.username {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #0ff;
+  text-shadow: 0 0 10px #0ff, 0 0 20px #ff00ff;
+}
+
+.subheading {
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem;
+  border-bottom: 1px solid #4b5563;
+  padding-bottom: 0.5rem;
+  color: #cbd5e1;
+}
+
+.tournament_list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tournament_card {
+  background: rgba(31, 41, 55, 0.7);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 0 15px #00ffff33, 0 0 25px #ff00ff33;
+  transition: transform 0.2s ease;
+}
+
+.tournament_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0 25px #00ffffaa, 0 0 35px #ff00ffaa;
+}
+
+.tournament_card h4 {
+  margin-bottom: 0.5rem;
+  color: #0ff;
+  text-shadow: 0 0 5px #00ffff99;
+}
+
+.tournament_card p {
+  margin-bottom: 0.8rem;
+  color: #d1d5db;
+}
+
+.fake_button {
+  background: linear-gradient(90deg, #00ffff, #ff00ff);
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 0 12px #00ffff, 0 0 20px #ff00ff;
+  transition: transform 0.2s, box-shadow 0.3s ease;
+}
+
+.fake_button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00ff, 0 0 30px #00ffff;
+}
+
+.registered {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  background: linear-gradient(90deg, #10b981, #06d6a0);
+  border-radius: 6px;
+  font-size: 0.9rem;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 10px #10b981aa;
+}
